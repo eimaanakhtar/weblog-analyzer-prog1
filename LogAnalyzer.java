@@ -57,4 +57,15 @@ public class LogAnalyzer
     {
         reader.printData();
     }
+    
+    public int busiestHour() {
+       int maxHour = 0;
+        for (int i = 0; i < hourCounts.length; i++){
+            if(hourCounts[i] > hourCounts[maxHour]) {
+            maxHour = i;
+        }
+       }
+       return maxHour;
+    }
+    
 }
