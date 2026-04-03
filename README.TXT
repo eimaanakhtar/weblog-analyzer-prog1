@@ -21,3 +21,5 @@ If the sample file cannot be found, the reader will create some simulated
 data. Alternatively, use the LogfileCreator to create some random data.
 Use its createFile method to give a file name and the number of entries
 to create.
+
+Q10 - If more than one hour has the highest count, the method returns the first one it finds because it only updates when it finds a larger value.
