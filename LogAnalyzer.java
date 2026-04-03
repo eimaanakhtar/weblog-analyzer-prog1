@@ -77,4 +77,15 @@ public class LogAnalyzer
        }
        return minHour;
     }
+    
+    public int busiestTwoHour() {
+        int maxHour = 0;
+        for(int i = 0; i < hourCounts.length - 1; i++){
+            int sum = hourCounts[i] + hourCounts[i + 1];
+            if( sum > hourCounts[maxHour] + hourCounts[maxHour + 1]) {
+                maxHour = i;
+            }
+        }
+        return maxHour;
+    }
 }
